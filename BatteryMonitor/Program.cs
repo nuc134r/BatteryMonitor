@@ -16,7 +16,15 @@ namespace BatteryMonitor
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+
+            Form form1 = new Form1();
+            form1.FormBorderStyle = FormBorderStyle.FixedToolWindow;
+            form1.ShowInTaskbar = false;
+            form1.StartPosition = FormStartPosition.Manual;
+            form1.Location = new System.Drawing.Point(-2000, -2000);
+            form1.Size = new System.Drawing.Size(1, 1);
+
+            Application.Run(form1);
         }
     }
 }

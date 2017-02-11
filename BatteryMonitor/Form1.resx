@@ -117,16 +117,4 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="Form1_OnPowerModeChanged_Power_status_has_changed" xml:space="preserve">
-    <value>Режим питания был изменён</value>
-  </data>
-  <data name="Form1_OnPowerModeChanged_Power_saving_is_disabled" xml:space="preserve">
-    <value>Экономия энергии отключена</value>
-  </data>
-  <data name="Form1_OnPowerModeChanged_Power_saving_is_enabled" xml:space="preserve">
-    <value>Экономия энергии включена</value>
-  </data>
-  <data name="Form1_OnPowerModeChanged_Problem_occured_determining_power_mode" xml:space="preserve">
-    <value>Возникла проблема при определении режима питания</value>
-  </data>
 </root>
