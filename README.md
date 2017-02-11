@@ -10,6 +10,10 @@ To build application simply run `Build.bat`.
 
 Build requires .NET Framework 4.0.
 
+## Launch
+
+`Launch.bat` is created just to easily launch application.
+
 ## Adding to Startup
 
 Run `Add to Startup folder.bat` to put compiled exe file to your Startup folder. 
