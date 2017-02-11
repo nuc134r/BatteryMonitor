@@ -10,6 +10,7 @@ namespace BatteryMonitor
     public partial class Form1 : Form
     {
         private readonly NotifyIcon trayIcon;
+        private PowerLineStatus lastStatus = SystemInformation.PowerStatus.PowerLineStatus;
 
         public Form1()
         {
@@ -32,23 +33,29 @@ namespace BatteryMonitor
 
         private void OnPowerModeChanged(object sender, PowerModeChangedEventArgs e)
         {
-            if (e.Mode == PowerModes.StatusChange)
+            var newStatus = SystemInformation.PowerStatus.PowerLineStatus;
+
+            if (e.Mode == PowerModes.StatusChange && newStatus != lastStatus)
             {
                 trayIcon.BalloonTipTitle = Resources.Form1_OnPowerModeChanged_Power_status_has_changed;
 
-                switch (SystemInformation.PowerStatus.PowerLineStatus)
+                switch (newStatus)
                 {
                     case PowerLineStatus.Online:
                         DisablePowerSaving();
 
                         trayIcon.BalloonTipIcon = ToolTipIcon.None;
                         trayIcon.BalloonTipText = Resources.Form1_OnPowerModeChanged_Power_saving_is_disabled;
+
+                        lastStatus = newStatus;
                         break;
                     case PowerLineStatus.Offline:
                         EnablePowerSaving();
 
                         trayIcon.BalloonTipIcon = ToolTipIcon.None;
                         trayIcon.BalloonTipText = Resources.Form1_OnPowerModeChanged_Power_saving_is_enabled;
+
+                        lastStatus = newStatus;
                         break;
                     case PowerLineStatus.Unknown:
                         trayIcon.BalloonTipIcon = ToolTipIcon.Error;
