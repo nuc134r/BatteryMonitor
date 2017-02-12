@@ -8,7 +8,7 @@ I would also appreciate feedback from Vista and XP users (problems with startup 
 
 ## Build
 
-To build application simply run `Build.bat`.
+To build application run `Build.bat`.
 
 Build requires .NET Framework 4.0.
 
