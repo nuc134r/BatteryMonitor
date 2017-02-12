@@ -14,7 +14,7 @@ Build requires .NET Framework 4.0.
 
 ## Launch
 
-`Launch.bat` is created just to easily launch application.
+Simply run `Launch.bat`.
 
 ## Adding to Startup
 
