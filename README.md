@@ -4,8 +4,6 @@ Application sets *Power saver* scheme when working on battery and *High performa
 
 Application is tested on Windows 10 and expected to work properly on Windows 7 and higher.
 
-I would also appreciate feedback from Vista and XP users (problems with startup folder path expected). Feel free to create Issues and Pull Requests.
-
 ## Build
 
 To build application run `Build.bat`.
