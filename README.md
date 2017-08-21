@@ -18,4 +18,4 @@ Simply run `Launch.bat`.
 
 Run `Add to Startup folder.bat` to put compiled exe file to your Startup folder. 
 
-Application doesn't use timers or any complexed logic that might slow down your performance.
+Application doesn't use timers (at least explicitly) or any complexed logic that might slow down your performance.
