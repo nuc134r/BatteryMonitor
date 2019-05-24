@@ -1,3 +1,5 @@
+**Recent hardware/drivers allow Windows to do that automatically. So this utility is kinda outdated but still can be used on old devices.**
+
 Application sets *Power saver* scheme when working on battery and *High performance* when power is plugged. A power scheme change produces a tray notification.
 
 ![Tray notification demo](https://hsto.org/files/98b/314/242/98b3142425a04beda62c48ca67a0c210.gif)
